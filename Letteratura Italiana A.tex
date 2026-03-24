@@ -1,0 +1,145 @@
+\documentclass[a4paper, 11pt]{article}
+
+% --- Pacchetti Fondamentali ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond} % Font elegante per il testo
+\usepackage[italian]{babel}
+\usepackage{gillius2} % Font moderno per titoli e commenti
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage[svgnames]{xcolor}
+\usepackage{multicol, verse, changepage}
+\usepackage{enumitem}
+\usepackage{xparse}
+\usepackage{hyperref}
+\usepackage{caption}
+
+% --- Configurazione Numerazione e Indice ---
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=MediumBlue,
+    urlcolor=DarkCyan,
+    pdftitle={Letteratura Italiana A - Edoardo Lo Iacono}
+}
+
+% --- Comandi Personalizzati ---
+
+% Titolo della poesia pulito e moderno
+\newcommand{\mypoemtitle}[2]{%
+    \vspace{2em}
+    \begin{flushleft}
+        {\sffamily\color{Tomato!80}\scriptsize\bfseries\MakeUppercase{#2}} \\ 
+        \vspace{2pt}
+        {\sffamily\LARGE\bfseries #1} \\ 
+        \vspace{-8pt}
+        {\color{Tomato!40}\rule{\textwidth}{0.8pt}} 
+    \end{flushleft}
+    \vspace{1em}
+}
+
+% Ambiente per i commenti a due colonne
+\makeatletter
+\newcommand\thickhrulefill[1][0.5pt]{\leavevmode\leaders\hrule height #1\hfill\kern\z@}
+\makeatother
+
+\newenvironment{commentaries}{%
+    \nopagebreak
+    {\color{Gray!30}\thickhrulefill}\vspace{-1ex}
+    \sffamily\small\begin{multicols*}{2}
+    \description[leftmargin=1.5em, style=unboxed, font=\sffamily\bfseries\color{Tomato}]
+}{%
+    \enddescription\end{multicols*}
+}
+
+% Comando per citare i versi (scolio)
+% Modifica del comando \scolio per accettare testo libero nelle []
+\NewDocumentCommand{\scolio}{O{}m}{\item[#1] \textbf{#2}:}
+
+\title{Letteratura Italiana A}
+\author{A cura di: Edoardo Lo Iacono}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\vfill 
+
+\begin{center}
+    A.S. 2025 - 2026 \\
+    Lezioni del prof. \href{https://cdslettere.campusnet.unito.it/do/docenti.pl/Alias?valter.boggione#tab-profilo}{Valter Boggione} + Integrazione dei testi
+\end{center}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{La scuola siciliana}
+\subsection{Le origini della letteratura in Italia}
+La letteratura si sviluppa in Italia molto tardi rispetto ad altri paesi come la Francia o la Germania, nonostante questo sviluppo tardivo nasce però, tramite un processo di importazione, una letteratura già matura.
+Per comprendere le motivazioni alla base di questo rallentamente è importante considerare due elementi fondamentali:
+\begin{itemize}
+    \item Quando la letteratura si origina, l'Italia è ancora fortemente frammentata, è quindi difficile stabilire una letteratura Italiana
+    \item La presenza del vaticano e quindi il forte potere culturale esercitato dalla chiesa favoriscono una cultura classica e l'utilizzo della lingua latina
+\end{itemize}
+Possiamo dire che a determinare l'inizio della letteratura in Italia grazie ad un fenomeno di importazione sia stato un preciso evento storico: la \textbf{crociata contro gli Albigesi}
+Gli Albigesi, o catari erano una popolazione del sud della Francia considerata eretica in quanto non apprezzava l'uso dei beni materiali perpetuato dalla chiesa Romana. La crociata ai loro danni durò circa 20 anni: dal 1200 al 1220 e portò molti Albigesi a migrare in altre parti d'Euorpa in cerca di protezione.
+Questa crociata era portata avanti dalla collaborazione tra :
+\begin{itemize}
+    \item \textit{Innocenzo III}: Papa che voleva scardinare i catari in quanto eretici
+    \item \textit{Luigi IX}: Re di Francia che voleva unificare i territori del sud in quel momento particolarmente frammentati. E' importante però, anche in quest'ultimo il valore religioso, Luigi IX era infatti soprannominato \textit{"il santo"}
+\end{itemize}
+A causa delle persecuzioni sul piano religioso, i Catari si trovarono a cercare rifugio e protezione in cui erano protetti da questo punto di vista, andarono quindi in Germania ed in molti altri luoghi tra cui l'Italia del Sud in cui prosperava la corte di \textbf{Federico II di Svevia}, una corte che presentava delle importantissime caratteristiche favorevoli ai Catari ovvero una forte \textit{apertura culturale} ed il fatto di essere una \textit{corte laica}.
+Questa stessa corte così aperta dal punto di vista ideolgico si rivela però fortemente assolutista dal punto di vista politico e questo ha varie ripercussioni nel modo di fare poesia.
+\subsection{Caratteristiche e differenze con la poesia provenzale}
+Con l'avvento della Scuola Siciliana cambiano infatti molti paradigmi della precedente poesia provenzale:
+In primo luogo i poeti non fanno più quello di professione ma sono invece \textit{funzionari di Federico II}, questo comporta un cambiamento nella concezione della poesia stessa, la quale viene ora approcciata come un passatempo individuale e non più destinato alle grandi rappresentazione. Questo comporta inoltre un scissione tra la figura del \textbf{cantante} e quella del \textbf{poeta}, scissione che non muterà fino ai moderni cantautori. Questo cambiamento, per quanto insignificante possa apparire apre in realtà le porte ad una nuova concezione della metrica che accompagnerà tutta la poesia Italiana delle origni; viene infatti applicata una metrica molto \textbf{più rigida} in quanto non si può con la voce andare ad aggiustare l'accento o la lunghezza dei versi, abbiamo così un'irrigidimento della metrica e una selezione di schemi metrici. In particolare nella scuola Siciliana troviamo solamente \textbf{canzoni}, alcune sporadiche \textbf{ballate} ed il metro da essi inventato: \textbf{il sonetto}. Anche le tematiche, proprio come la metrica, si vanno ad irrigidire; infatti visto l'assolutismo della scuola Siciliana e visto il ruolo di funzionari esercitato dai "poeti" diviene totalmente vietato parlare di politica, cadono così interi generi come quello del \textit{sirventese} (presente ancora in altre parti d'Italia in particolare quella settentrionale), la poesia ricopre un ruolo maggiormente di svago concentrandosì così sui piaceri edonistici ed in particolar modo sull'\textbf{amore}, quest'ultimo addirittura paragonato e posto innanzi ai valori della chiesa, decisione che non porta alcuna ripercussione in questi poeti visto il contesto fortemente laico. 
+\subsection{Gli scrittori ed il siciliano illustre}
+La scuola siciliana viene definita \textbf{scuola} in quanto rappresenta un gruppo di intellettuali che condividono le stesse idee avvalendosi come abbiamo detto di uno stile e di tematiche molto rigide. Queste premesse portano gli autori della scuola siciliana ad essere sostanzialmente \textit{anonimi} ed irriconoscibili tra di loro, tranne nei rari casi in cui è presente come vedremo una firma. L'attribuzione dei testi non è ancora oggi completamente sicura, è inoltre fondamentale notare come nel leggere i loro testi non ci troviamo più davanti alla versione originale ma ad una versione \textbf{toscanizzata} dai copisti toscani, modifica che renderà i testi più accessibili portando anche alla corrente Siculo - Toscana, andando però a perdere completamente il suo valore lessicale; è infatti impossibile applicare una traduzione inversa in quanto le poesie dei siciliani erano scritte in un \textbf{siciliano illustre}, ovvero una lingua colta usata solamente in ambito letterario che univa in se elemente delle più importanti lingue della letteratura del tempo: il latino, il provenzale ed il Siciliano.
+La toscanizzazione dei componimenti è palese data la presenza di rime improprie chiamate \textbf{rime siciliane}.
+I principali autori di questa corrente si caratterizzano per delle differenze minime e sono:
+\subsubsection{Giacomo da Lentini}
+Giacomo da Lentini è il poeta più importante della scuola siciliana, considerato da molti come fondatore di questa stessa corrente, va a lui attribuita l'invenzione del \textbf{sonetto}.
+Per quanto riguarda la sua vita non si hanno molte informazioni biografiche, sappiamo però per fonte diretta e tramite Dante che faceva di professione il Notaio, è inoltre l'autore più prolifico ma come detto non c'è la certezza che tutti i testi a lui attribuiti siano esattamente dell'autore.
+Tra i testi attribuiti a Giacomo da Lentini troviamo:
+\begin{itemize}
+    \item \hyperlink{para:meravigliosamente}{Meravigliosamente}
+    \item \hyperlink{para:postoincore}{Io m'aggio posto in core a Dio servire}
+    \item \hyperlink{para:amorun}{Amor è un disio che ven da core}
+\end{itemize}
+\subsubsection{Stefano Protonotaro}
+Anche di Stefano Protonotaro abbiamo poche informazioni biografiche, lo studiamo per un motivo particolare, la sua importanza poetica è infatti minore rispetto a quella di Giacomo da Lentini ma è importante in quanto è l'unico poeta di cui ci rimane un testo scritto in \textit{siciliano illustre} e non toscanizzato.
+La poesia in questione è: \hyperlink{para:pirmeu}{Pir meu cori alligrari
+}
+\subsubsection{Cielo d'Alcamo}
+Cielo d'Alcamo è uno degli esponenti della scuola siciliana, la suo opera più importante: \hyperlink{par:rosafresca}{Rosca fresca aulentissima} riprende le tematiche tipiche della poesia Siciliana in maniera ironica e scherzosa
+\include{testi/meravigliosamente}
+\include{testi/postoincore}
+\include{testi/amoreeundisio}
+\include{testi/Pirmeucori}
+%Aggiungere rosa fresca aulentissima.
+
+\section{La poesia religiosa}
+Abbiamo visto come la letteratura in Italia si sia sviluppata in maniera tardiva e con un modello di importazione francese, questo è vero in particolare al nord ed al sud, possiamo infatti identificare una tripartizione geografica della letteratura in Italia delle orgini, La frammentazione dell'Italia si rispecchia così in quella della letteratura che si divide così:
+\begin{itemize}
+    \item Al \textbf{nord} troviamo una poesia di stampo francese, sono ancora presenti qui generi di natura politica come il sirventese che sono invece aboliti al sud
+    \item Al \textbf{sud} troviamo la scuola siciliana di cui già abbiamo parlato nel capitolo precedente
+    \item Al \textbf{centro}, a causa dell'avvento di diversi monasteri si diffonde una poesia fortemente religiosa, argomento di questo capitolo. Questa letteratura si distanzia tanto dal modello francese presente al nord quanto dai temi laici della scuola siciliana
+\end{itemize}
+
+La letteratura religiosa viene per molto tempo considerata una letteratura di serie B, questa concezione ci è testimoniata da Dante in due contesti diversi: nel de vulgari eloquentia Dante sostiene che tutti coloro che fanno letteratura si ispirano alla scuola siciliana e, nel paradiso quando Dante incontra San Francesco lo loda per il suo ruolo in ambito religioso senza mai fare accenno alla sua letteratura.
+La fama di questa corrente, come vedremo meglio analizzando il testo di Francesco arriva grazie al romanticismo dell'800 che proprio nella figura di Francesco rivede l'esaltazione della natura.
+
+La poesia umbra si distanzia fortemente da quella vista in precedenza, se infatti i poeti della scuola siciliana, soprattutto a causa dell'assolutismo politico potevano trattare solamente tematiche edonistiche e di piacere, la poesia di questa corrente ha un valore maggiormente \textbf{utile} e pragmatico, le poesie sono inserite nei \textit{laudari} con il fine di far pregare i membri di un certo monastero, usano perciò il verso e la metrica non tanto con un fine stilistico ma piuttosto per agevolare la memorizzazione della preghiera.
+
+\subsection{Gli autori}
+Anche di questa letteratura abbiamo una scarsa selezione di autori, di cui sappiamo relativamente poco. E' interessante notare come entrambi rappresentino due modelli di letteratura diversissimi se non antitetici tra di loro.
+\subsubsection{Francesco d'Assisi}
+\subsubsection{Jacopone da Todi}
+
+
+\end{document}

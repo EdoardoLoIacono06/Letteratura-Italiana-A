@@ -1,0 +1,13 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {1}La scuola siciliana}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Le origini della letteratura in Italia}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Caratteristiche e differenze con la poesia provenzale}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Gli scrittori ed il siciliano illustre}{3}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Giacomo da Lentini}{4}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Stefano Protonotaro}{4}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}Cielo d'Alcamo}{4}{subsubsection.1.3.3}%
+\contentsline {section}{\numberline {2}La poesia religiosa}{13}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Gli autori}{13}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Francesco d'Assisi}{13}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Jacopone da Todi}{13}{subsubsection.2.1.2}%
