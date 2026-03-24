@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.11.7)  24 MAR 2026 08:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.11.7)  24 MAR 2026 09:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -575,7 +575,7 @@ Here is how much of TeX's memory you used:
 pdfTeX warning (dest): name{par:rosafresca} has been referenced but does not exist, replaced by a fixed one
 
 </opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Bold.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Italic.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Regular.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Bold.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Regular.pfb>
-Output written on "Letteratura Italiana A.pdf" (13 pages, 124578 bytes).
+Output written on "Letteratura Italiana A.pdf" (13 pages, 124584 bytes).
 PDF statistics:
  376 PDF objects out of 1000 (max. 8388607)
  346 compressed objects within 4 object streams
